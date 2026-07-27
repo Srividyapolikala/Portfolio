@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #1f1c2c, #928dab);
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4ecd;
+}
+
+/* HOME */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-text h1 span,
+.typing {
+    color: #ff4ecd;
+}
+
+.home-text h1,
+.home-text h2,
+.home-text h3 {
+    transition: 0.3s;
+}
+
+.home-text h1:hover,
+.home-text h2:hover,
+.home-text h3:hover {
+    transform: translateX(10px);
+}
+
+.intro {
+    max-width: 450px;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* IMAGE (CONSTANT) */
+.home-img img {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #ff4ecd;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 22px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff4ecd;
+    transform: scale(1.3);
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    background: #ff4ecd;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #ff4ecd;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.about-box {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.about-box p {
+    margin-bottom: 10px;
+}
+
+/* SKILLS */
+.skill-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box div {
+    background: rgba(255,255,255,0.1);
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill-box div:hover {
+    background: #ff4ecd;
+    transform: translateY(-10px);
+}
+
+/* CONTACT */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
